@@ -1,0 +1,54 @@
+body{
+    background-color: aliceblue;
+    
+}
+#container{
+    display: inline-flex;
+    padding: 10px;
+    background-color: white;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    
+}
+#sidestages{
+    background: url(images/bg-sidebar-desktop.svg);
+    padding: 20px;
+}
+#allstagecontainer{
+    margin-left: 50px;
+    width: 600px;
+    height: 450px;
+    padding: 20px;
+    color: rgb(2, 2, 58);
+}
+h2{
+    font-weight: bold;
+}
+p{
+
+}
+input{
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: white;
+    margin-top: 10px;
+    border: 1px solid grey;
+    outline: none;
+}
+li{
+    padding: 10px;
+    color: white;
+}
+button{
+    color: white;
+    background-color: rgb(2, 2, 55);
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+#error{
+    color: red;
+}
+ 

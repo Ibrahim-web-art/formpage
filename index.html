@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" >
+        <div id="sidestages">
+            <ol>
+                <li>STEP 1<br>YOUR INFO</li>
+                <li>STEP 2<br>SELECT PLAN</li>
+                <li>STEP 3<br>ADD-ONS</li>
+                <li>STEP 4<br>SUMMARY</li>
+            </ol>
+        </div>
+        <div id="allstagecontainer">
+           <div id="stage1">
+                <form action="">
+                <h2>Personal Info <br> <small style="font-size: small; font-weight: 100; color:gray ;">please provide your name, email address, and phone number</small></h2>
+                <h5></h5>
+                <label for="first-name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="e.g stephen king" required> <br> <br>
+                
+                <label for="email">Email Address:</label><br>
+                <input type="text" id="email" name="email"placeholder="e.g step@gmail.com" required><br><br>
+                
+                <label for="Phonenumber">Phone Number:</label><br>
+                <input type="phone" id="phoneno" name="phoneno" placeholder="e.g +1234 567 890" required><br><br><br><br><br>
+                <small id="error"></small>
+                <button style="float: right;" onclick="stage2()">Next Step</button>
+                </form>
+            </div>
+            <div id="stage2" style="display: none;">
+                <h2>Select Your Plan</h2>
+                <p>You have the option of monthly or yearly billing</p>
+                <div> Arcade</div>
+                <div>Advance</div>
+                <div>Pro</div>
+                <div>yearly  monthly</div>
+                <button style="float: right;" onclick="prevstage1()">previous stage</button>
+                <button style="float: right;" onclick="stage3()">Next Step</button>
+
+            </div>
+            <div id="stage3" style="display: none;">
+                <h2>Pick Ad-ons</h2>
+                <p>ADD-ONS help enhance you gaming experience</p>
+                <button>Online service</button>
+                <button>Large Storage</button>
+                <button>Customizable profile</button>
+                <button style="float: right;" onclick="prevstage2()">previous stage</button>
+                <button style="float: right;" onclick="stage3()">Next Step</button>
+            <div id="stage4" style="display: none;">
+                <h2>Finishing Up</h2>
+                <p>Double-check everything looks ok before submiting</p>
+                <button>Online service</button>
+                <button>Large Storage</button>
+                <button>Customizable profile</button>
+                <button style="float: right;" onclick="prevstage3()">previous stage</button>
+                <button style="float: right;" onclick="submit()">Next Step</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
