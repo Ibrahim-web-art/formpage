@@ -18,7 +18,7 @@
             </ol>
         </div>
         <div id="allstagecontainer">
-           <div id="stage1">
+           <div id="stage1" style="display:;">
                 <form action="">
                 <h2>Personal Info <br> <small style="font-size: small; font-weight: 100; color:gray ;">please provide your name, email address, and phone number</small></h2>
                 <h5></h5>
@@ -31,19 +31,23 @@
                 <label for="Phonenumber">Phone Number:</label><br>
                 <input type="phone" id="phoneno" name="phoneno" placeholder="e.g +1234 567 890" required><br><br><br><br><br>
                 <small id="error"></small>
-                <button style="float: right;" onclick="stage2()">Next Step</button>
                 </form>
+                <button style="float: right;" onclick="stage2()">Next Step</button>
+
             </div>
             <div id="stage2" style="display: none;">
                 <h2>Select Your Plan</h2>
                 <p>You have the option of monthly or yearly billing</p>
-                <div> Arcade</div>
-                <div>Advance</div>
-                <div>Pro</div>
-                <div>yearly  monthly</div>
-                <button style="float: right;" onclick="prevstage1()">previous stage</button>
+                <div id="billing_categories">
+                    <div class="billcat"><img src="images/icon-arcade.svg" alt="" srcset=""> <h4>Arcade</h4><p id="price1">$9/mo</p></div>
+                    <div class="billcat" style="margin-left: 10px;"><img src="images/icon-advanced.svg" alt="" srcset=""><h4>Advance</h4><p id="price2">$12/mo</p></div>
+                    <div class="billcat" style="margin-left: 10px;"><img src="images/icon-pro.svg" alt="" srcset=""><h4>Pro</h4><p id="price3">$15/mo</p></div>
+                </div>
+                <div id="yearlyswitch" style="background-color: white;">
+                    <p>Monthly<img id="change_image" src="images/off.PNG" style="width: 40px; height: 20px;" onclick="change_image()"> &nbsp; Yearly</p>
+                </div>
+                <button id="prevstage1" onclick="prevstage1()">Go Back</button>
                 <button style="float: right;" onclick="stage3()">Next Step</button>
-
             </div>
             <div id="stage3" style="display: none;">
                 <h2>Pick Ad-ons</h2>
