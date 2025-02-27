@@ -19,11 +19,28 @@ function validate() {
   function stage2() {
     validate();
   }
-  function change_image() {
+
+    let x = 0;
+  function change_pix_price(){
+    x+=1;
     let image = document.getElementById("change_image");
-    image.src = "images/on.PNG";
-    document.getElementById("price1").innerHTML = "$100";
-    document.getElementById("price2").innerHTML = "$200";
-    document.getElementById("price3").innerHTML = "$300";
+if (x % 2 == 0)
+        {
+          image.src = "images/off.PNG";
+          document.getElementById("price1").innerHTML = "$9";
+        document.getElementById("price2").innerHTML = "$12";
+        document.getElementById("price3").innerHTML = "$15";
+        }
+        else{
+          image.src = "images/on.PNG";
+          document.getElementById("price1").innerHTML = "$100";
+        document.getElementById("price2").innerHTML = "$200";
+        document.getElementById("price3").innerHTML = "$300";
+        }
+    }
+  function stage3(){
+    document.getElementById("stage2").style.display = "none";
+    document.getElementById("stage3").style.display = "block";
   }
-  
+
+

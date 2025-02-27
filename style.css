@@ -52,7 +52,7 @@ body {
   h2 {
     font-weight: bold;
   }
-  input {
+  #stage1 input {
     width: 500px;
     height: 40px;
     border-radius: 5px;
@@ -82,5 +82,17 @@ body {
   #yearlyswitch {
     background-color: pink;
     margin-top: 20px;
+  }
+  #stage3 #pickadd{
+    display: inline-flex;
+  }
+  #stage3 #select{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border-color:black;
+    margin-top: 10px;
+    border: 1px solid grey;
+    outline: none;
   }
   

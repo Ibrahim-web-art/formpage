@@ -18,7 +18,7 @@
             </ol>
         </div>
         <div id="allstagecontainer">
-           <div id="stage1" style="display:;">
+           <div id="stage1" style="display:block;">
                 <form action="">
                 <h2>Personal Info <br> <small style="font-size: small; font-weight: 100; color:gray ;">please provide your name, email address, and phone number</small></h2>
                 <h5></h5>
@@ -35,7 +35,7 @@
                 <button style="float: right;" onclick="stage2()">Next Step</button>
 
             </div>
-            <div id="stage2" style="display: none;">
+            <div id="stage2" style="display:none;">
                 <h2>Select Your Plan</h2>
                 <p>You have the option of monthly or yearly billing</p>
                 <div id="billing_categories">
@@ -44,17 +44,28 @@
                     <div class="billcat" style="margin-left: 10px;"><img src="images/icon-pro.svg" alt="" srcset=""><h4>Pro</h4><p id="price3">$15/mo</p></div>
                 </div>
                 <div id="yearlyswitch" style="background-color: white;">
-                    <p>Monthly<img id="change_image" src="images/off.PNG" style="width: 40px; height: 20px;" onclick="change_image()"> &nbsp; Yearly</p>
+                    <p>Monthly<img id="change_image" src="images/off.PNG" style="width: 40px; height: 20px;" onclick="change_pix_price()"/> &nbsp; Yearly</p>
                 </div>
                 <button id="prevstage1" onclick="prevstage1()">Go Back</button>
                 <button style="float: right;" onclick="stage3()">Next Step</button>
             </div>
-            <div id="stage3" style="display: none;">
+            <div id="stage3" style="display: none; background-color:aliceblue;" >
                 <h2>Pick Ad-ons</h2>
                 <p>ADD-ONS help enhance you gaming experience</p>
-                <button>Online service</button>
-                <button>Large Storage</button>
-                <button>Customizable profile</button>
+                <form>
+                    <div id="select">
+                    <input type="checkbox" id="online" name="pickadd" value="online" >
+                    <label for="pickadd1" id="pickadd"> <div>Online service <br>Access to multiplayer </div> <div>+$1/mo</div></label><br>
+                    </div>
+                    <div id="select">
+                    <input type="checkbox" id="large" name="large" value="Car">
+                    <label for="vehicle2" id="pickadd"><div>Large storage<br>Extra 1TB of cloud save </div>  <div>+$2/mo</div></label><br>
+                    </div>
+                    <div id="select">
+                    <input type="checkbox" id="customized" name="customized" value="Boat">
+                    <label for="vehicle3" id="pickadd"><div>Customizable profile <br>custom theme on your profile </div>  <div>+$2/mo</div></label>
+                    </div>
+                  </form>
                 <button style="float: right;" onclick="prevstage2()">previous stage</button>
                 <button style="float: right;" onclick="stage3()">Next Step</button>
             <div id="stage4" style="display: none;">
